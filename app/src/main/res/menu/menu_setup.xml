@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item
+        android:id="@+id/setup_online"
+        android:icon="@mipmap/ic_help_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Check Online">
+    </item>-->
+    <item
+        android:id="@+id/setup_help"
+        android:icon="@mipmap/ic_help_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Help">
+    </item>
+</menu>
