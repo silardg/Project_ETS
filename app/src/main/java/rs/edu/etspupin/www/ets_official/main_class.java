@@ -6,16 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 
 public class main_class extends AppCompatActivity {
 
-    Intent intent_chooseclass   = new Intent(main_class.this, choose_class.class);
-
+    Intent intent_setupclass    = new Intent(main_class.this, setup.class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent intent_setupclass    = new Intent(main_class.this, setup.class);
+        Intent intent_dashboardclass = new Intent(main_class.this, dashboard.class);
 
-        startActivity(intent_setupclass);
-        //startActivity(intent_chooseclass);
+        //startActivity(intent_setupclass);
+        startActivity(intent_dashboardclass);
     }
 }
