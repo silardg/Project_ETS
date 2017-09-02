@@ -11,13 +11,15 @@ import rs.edu.etspupin.www.ets_official.ordinary;
 
 public class setup extends AppCompatActivity {
 
+    ordinary ordinary = new ordinary();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Setup " + new ordinary().getEmojiByUnicode(new ordinary().emoji_graduatehat));
+        toolbar.setTitle("Setup " + ordinary.getEmojiByUnicode(ordinary.emoji_graduatehat));
         setSupportActionBar(toolbar);
     }
 
