@@ -1,36 +1,45 @@
 package rs.edu.etspupin.www.ets_official;
 
-import android.content.Context;
+import android.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Toast;
-import rs.edu.etspupin.www.ets_official.ordinary;
+import android.view.Window;
+import android.view.WindowManager;
 
 public class setup extends AppCompatActivity {
 
+    // ordinary class
     ordinary ordinary = new ordinary();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_setup);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+       /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Setup " + ordinary.getEmojiByUnicode(ordinary.emoji_graduatehat));
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);*/
+
+
     }
 
-    // Menu icons are inflated just as they were with actionbar
+    /*
+    // write the menu items into the menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_setup, menu);
         return true;
-    }
+    }*/
 
+    /*
+    // execute script when an option is selected
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -48,5 +57,5 @@ public class setup extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
 
         }
-    }
+    }*/
 }
