@@ -8,54 +8,18 @@ import android.view.WindowManager;
 
 public class setup extends AppCompatActivity {
 
-    // ordinary class
-    ordinary ordinary = new ordinary();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // request feature
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+        // setup the layout
         setContentView(R.layout.activity_setup);
 
+        // set the flag that we are using fullscreen and no status bar is needed
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-
-       /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Setup " + ordinary.getEmojiByUnicode(ordinary.emoji_graduatehat));
-        setSupportActionBar(toolbar);*/
-
-
     }
-
-    /*
-    // write the menu items into the menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_setup, menu);
-        return true;
-    }*/
-
-    /*
-    // execute script when an option is selected
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.setup_help:
-                Context context = getApplicationContext();
-                CharSequence text = "Help!";
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-                return true;
-            default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
-                return super.onOptionsItemSelected(item);
-
-        }
-    }*/
 }
