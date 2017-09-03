@@ -21,7 +21,7 @@ public class main_class extends AppCompatActivity {
         intent_setupclass       = new Intent(main_class.this, setup.class);
         intent_dashboardclass   = new Intent(main_class.this, dashboard.class);
 
-        //startActivity(intent_setupclass);
-        startActivity(intent_dashboardclass);
+        startActivity(intent_setupclass);
+        //startActivity(intent_dashboardclass);
     }
 }
