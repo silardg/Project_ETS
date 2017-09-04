@@ -20,6 +20,14 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_dashboard" />
+    <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dashboard_vf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include android:id="@+id/layout_dashboard" layout="@layout/content_dashboard" />
+        <include android:id="@+id/layout_dashboard_timetable" layout="@layout/content_dashboard_timetable" />
+
+    </ViewFlipper>
 
 </android.support.design.widget.CoordinatorLayout>

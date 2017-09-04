@@ -3,34 +3,34 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
+            android:id="@+id/nav_timetable"
+            android:title="Timetable"
+            android:icon="@mipmap/ic_apps_black_24dp" />
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+        <item
+            android:id="@+id/nav_subjects"
+            android:title="Subjects"
+            android:icon="@mipmap/ic_grade_black_24dp" />
+
+        <item
+            android:id="@+id/nav_grades"
+            android:title="Grades"
+            android:icon="@mipmap/ic_dashboard_black_24dp" />
+
+        <item
+            android:id="@+id/nav_homework"
+            android:title="Homework"
+            android:icon="@mipmap/ic_receipt_black_24dp" />
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:title="Calendar"
+            android:icon="@mipmap/ic_perm_contact_calendar_black_24dp" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings"
+            android:icon="@mipmap/ic_settings_black_24dp" />
+    </group>
 
 </menu>
